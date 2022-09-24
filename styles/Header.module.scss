@@ -1,9 +1,22 @@
+.fixedHeaderContainer {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
 .headerContainer {
     width: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
+    background-color: #fdfdfdfd;
+
+    @media only screen and (max-width: 1000px) {
+        box-shadow: -13px 14px 400px -24px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -13px 14px 400px -24px rgba(0,0,0,0.75);
+        -moz-box-shadow: -13px 14px 400px -24px rgba(0,0,0,0.75);
+    }
 
     @media only screen and (max-width: 568px) {
         padding: 20px 15px;
@@ -136,6 +149,9 @@
     justify-content: space-around;
     background-color: var(--dark-background);
     height: 60px;
+    box-shadow: 1px 10px 10px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 10px 10px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 10px 10px -6px rgba(0, 0, 0, 0.75);
 
     @media only screen and (max-width: 1000px) {
         display: none;

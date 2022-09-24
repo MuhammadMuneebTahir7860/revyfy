@@ -13,7 +13,7 @@ export default function Header() {
         setIsOpen((prevState) => !prevState)
     }
     return (
-        <div>
+        <div className={styles.fixedHeaderContainer}>
             <div className={styles.headerContainer}>
                 <div onClick={toggleDrawer} className={styles.barIconContainer}>
                     <FaBars size={25} />

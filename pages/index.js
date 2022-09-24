@@ -8,6 +8,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { GiContract } from 'react-icons/gi';
 import { FaEdit, FaSms } from 'react-icons/fa';
 import mobile from '../public/Cost-of-Mobile-App-Development-in-Singapore-removebg-preview.png';
+import graph from '../public/graph.png';
+import barber from '../public/png_20220924_154023_0000.png';
 export default function Home() {
   const child = { width: `300em`, height: `100%` }
   return (
@@ -51,8 +53,8 @@ export default function Home() {
         </div>
       </AnimationOnScroll>
       <div className={styles.video}>
-      <iframe className={styles.iframe} allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' frameborder='0' height='621' src='https://www.youtube.com/embed/_MXtbjwsz3A' width='1261'></iframe>
-    </div>
+        <iframe className={styles.iframe} allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' frameborder='0' height='621' src='https://www.youtube.com/embed/_MXtbjwsz3A' width='1261'></iframe>
+      </div>
       <div className={styles.softwarePictureContainerOfMobileWithDesc}>
         <div className={styles.softwareDetailsContainer}>
           <AnimationOnScroll animateIn="animate__fadeInLeftBig">
@@ -80,7 +82,62 @@ export default function Home() {
           </div>
         </div>
       </AnimationOnScroll>
- 
+      <div className={styles.softwarePictureContainerOfMobileWithDescBackground}>
+        <div className={styles.softwareDetailsContainer}>
+          <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+            <p className={styles.textHeading}>Some awesome features</p>
+            <ul>
+              <li className={styles.detailsText}>Appointment schedule with online booking </li>
+              <li className={styles.detailsText}>Book out individual rooms  </li>
+              <li className={styles.detailsText}>Unlimited users </li>
+              <li className={styles.detailsText}>Unlimited locations</li>
+              <li className={styles.detailsText}>Automatic sms/ email reminders </li>
+              <li className={styles.detailsText}>Customer history showing records card, spend , loyalty points, attendance and account balance , invoices and deposits.  </li>
+              <li className={styles.detailsText}>Access from any device </li>
+              <li className={styles.detailsText}>Full till and point of sale management </li>
+              <li className={styles.detailsText}>Stock control with low stock warnings  </li>
+              <li className={styles.detailsText}>Pc,tablet and phone friendly   </li>
+              <li className={styles.detailsText}>Marketing  </li>
+              <li className={styles.detailsText}>Daily dashboard analytics   </li>
+              <li className={styles.detailsText}>Employee management  </li>
+
+            </ul>
+          </AnimationOnScroll>
+
+        </div>
+        <div className={styles.pictureContainer}>
+          <AnimationOnScroll animateIn="animate__fadeInRightBig">
+            <Image src={graph} alt='mobile' />
+          </AnimationOnScroll>
+        </div>
+      </div>
+        <p className={styles.solutionHeading}>Complete software solution tailored to your industry</p>
+      <div className={styles.containerForRightAnimationOfGallery}>
+      <AnimationOnScroll animateIn="animate__fadeInRightBig">
+        <div className={styles.imgsRow}>
+          <div className={styles.galleryImgContainer}>
+            <Image className={styles.galleryImg} src={barber} />
+          </div>
+          <div className={styles.galleryImgContainer}>
+            <Image className={styles.galleryImg} src={barber} />
+          </div>
+          <div className={styles.galleryImgContainer}>
+            <Image className={styles.galleryImg} src={barber} />
+          </div>
+      </div>
+        <div className={styles.imgsRow}>
+          <div className={styles.galleryImgContainer}>
+            <Image className={styles.galleryImg} src={barber} />
+          </div>
+          <div className={styles.galleryImgContainer}>
+            <Image className={styles.galleryImg} src={barber} />
+          </div>
+          <div className={styles.galleryImgContainer}>
+            <Image className={styles.galleryImg} src={barber} />
+          </div>
+        </div>
+      </AnimationOnScroll>
+      </div>
     </div >
   )
 }
