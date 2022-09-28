@@ -9,7 +9,7 @@ import { GiContract } from 'react-icons/gi';
 import { FaEdit, FaSms } from 'react-icons/fa';
 import mobile from '../public/Cost-of-Mobile-App-Development-in-Singapore-removebg-preview.png';
 import graph from '../public/graph.png';
-import barber from '../public/png_20220924_154023_0000.png';
+import barber from '../public/aesthetics-colour.jpeg';
 export default function Home() {
   const child = { width: `300em`, height: `100%` }
   return (
@@ -111,10 +111,19 @@ export default function Home() {
           </AnimationOnScroll>
         </div>
       </div>
-        <p className={styles.solutionHeading}>Complete software solution tailored to your industry</p>
+      <p className={styles.solutionHeading}>Complete software solution tailored to your industry</p>
       <div className={styles.containerForRightAnimationOfGallery}>
-      <AnimationOnScroll animateIn="animate__fadeInRightBig">
-        <div className={styles.imgsRow}>
+        <AnimationOnScroll animateIn="animate__fadeInRightBig">
+          <div className={styles.imgsRow}>
+            <div className={styles.galleryImgContainer}>
+              <Image className={styles.galleryImg} src={barber} />
+            </div>
+            <div className={styles.galleryImgContainer}>
+              <Image className={styles.galleryImg} src={barber} />
+            </div>
+            <div className={styles.galleryImgContainer}>
+              <Image className={styles.galleryImg} src={barber} />
+            </div>
           <div className={styles.galleryImgContainer}>
             <Image className={styles.galleryImg} src={barber} />
           </div>
@@ -124,19 +133,8 @@ export default function Home() {
           <div className={styles.galleryImgContainer}>
             <Image className={styles.galleryImg} src={barber} />
           </div>
-      </div>
-        <div className={styles.imgsRow}>
-          <div className={styles.galleryImgContainer}>
-            <Image className={styles.galleryImg} src={barber} />
           </div>
-          <div className={styles.galleryImgContainer}>
-            <Image className={styles.galleryImg} src={barber} />
-          </div>
-          <div className={styles.galleryImgContainer}>
-            <Image className={styles.galleryImg} src={barber} />
-          </div>
-        </div>
-      </AnimationOnScroll>
+        </AnimationOnScroll>
       </div>
     </div >
   )
